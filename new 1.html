@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juma Jallow - Curriculum Vitae</title>
+  <style>
+    /* Global Styles */
+     body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      min-height: 100vh;
+      background: #f4f6f8;
+    }
+	section {
+    background: white;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+    a { text-decoration: none; color: inherit; }
+    /* Sidebar */
+    .sidebar {
+      width: 280px;
+      background: #4A90E2;
+      color: #fff;
+      padding: 20px;
+      box-shadow: 2px 0 8px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .profile-pic {
+      width: 230px;
+      height: 350px;
+      border-radius: 0%;
+      object-fit: cover;
+      border: 4px solid #fff;
+      margin-bottom: 15px;
+    }
+    .job-title, .company {
+      text-align: center;
+      margin-bottom: 5px;
+    }
+    .contact, .skills {
+      width: 100%;
+      margin-top: 20px;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 8px;
+      padding: 10px;
+    }
+    .contact h3, .skills h3 {
+      margin-bottom: 10px;
+      border-bottom: 1px solid rgba(255,255,255,0.5);
+      padding-bottom: 5px;
+    }
+    .contact p, .skills ul li {
+      font-size: 0.9em;
+      margin-bottom: 8px;
+    }
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+    .social-icons a {
+      margin: 0 8px;
+      font-size: 1.4em;
+      color: #fff;
+      transition: transform 0.2s;
+    }
+    .social-icons a:hover {
+      transform: scale(1.1);
+    }
+    .pdf-link {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 8px 12px;
+      background: #fff;
+      color: #4A90E2;
+      border-radius: 4px;
+      font-weight: bold;
+      transition: background 0.2s;
+    }
+    .pdf-link:hover {
+      background: #e1eefd;
+    }
+    /* Main Content */
+    .main {
+      flex: 1;
+      padding: 30px;
+      overflow-y: auto;
+    }
+    .section {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .section h2 {
+      color: #4A90E2;
+      margin-bottom: 15px;
+      position: relative;
+    }
+    .section h2::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 50px;
+      height: 4px;
+      background: #4A90E2;
+      border-radius: 2px;
+    }
+    .section ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .section li {
+      margin-bottom: 12px;
+    }
+    .section li h3 {
+      margin-bottom: 4px;
+    }
+    .section li p {
+      font-size: 0.9em;
+      color: #555;
+    }
+    /* Responsive */
+    @media (max-width: 768px) {
+      body { flex-direction: column; }
+      .sidebar { width: 100%; flex-direction: row; overflow-x: auto; }
+      .sidebar > * { margin-right: 20px; }
+      .main { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+   <aside class="sidebar">
+    <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+    <h2 class="job-title">Senior I.C.T Technician</h2>
+    <h3 class="company">Ministry of Fisheries and Water Resources</h3>
+	  <p class="address">Latriya, Kombo North, The Gambia</p>
+
+     <div class="contact">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:jumajallow86@gmail.com">jumajallow86@gmail.com</a></p>
+	  <p>Email: <a href="mailto:jjallow@mofwr.govg.gm">jjallow@mofwr.govg.gm</a></p>
+	  
+      <p>Phone: +220 3140532 / 2623147</p>
+    </div>
+
+    <div class="social-icons">
+      <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+      <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+    </div>
+
+      <div class="skills">
+      <h3>Skills</h3>
+      <ul>
+        <li>HTML &amp; CSS</li>
+        <li>Software installation & updates</li>
+		 <li>Microsoft Excel</li>
+		  <li>Kobo Collect</li>
+		  <li>GIS & Remote Sensing</li>
+		 <li>System administration</li>
+        <li>R Data analysis Software</li>
+        <li>Networking Configuration and administration</li>
+        <li>QGIS</li>
+      </ul>
+    </div>
+
+    <a href="cv.pdf" class="pdf-link" target="_blank">Download CV (PDF)</a>
+  </aside>
+
+  
+  <main class="main">
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>I am a dynamic Senior ICT Support Technician with a proven track record at the Ministry of Fisheries and Water Resources. Expert in system administration and technical support, with a special passion for innovative solutions and enhancing team performance. Committed to optimizing IT infrastructure and empowering staff through effective training and communication.</p>
+    </section>
+
+    <section class="education">
+        <h2>Education</h2>
+        <p>🎓 <strong>University of the Gambia</strong><br>
+          BSc in Information Systems (Dec 2024)</p>
+        <p>📜 <strong>Insight Training Centre </strong><br>
+          Certificate in Repair and Maintenance A+ (June 2014)</p>
+        <p>🎓 <strong>Insight Training Centre</strong><br>
+          Diploma in Information Technology (Dec 2013),<br>
+        <p>📜 <strong>Insight Training Centre </strong><br>
+          Certificates in IT, Repair and Maintenance (June 2013)</p>
+      </section>
+
+   <section class="achievements">
+        <h2>Short Certification Trainings</h2>
+        <ul>
+		  <li>📜 R Software Training, Ministry of Fisheries, Fujian Institute of Oceanograghy, China 06/12/2025 – 06/25/2025</li>
+          <li>📜 R Software Training, Ministry of Fisheries, Gambia, 03/03/2025 – 03/14/2025</li>
+          <li>📜 CoboCollect Training, Dept. of Fisheries, Gambia, 08/19/2024 – 08/23/2024</li>
+          <li>🌍 Fisheries Data Management, ATLFACO, Morocco, 02/26/2024 – 03/01/2024</li>
+          <li>📜 Digital Transformation & Data Security, IIHT, Gambia, 06/12/2023 – 06/23/2023</li>
+          <li>📜 Cloud Service Contract Negotiation, Univ. of Rhode Island (Online), 09/12/2022 – 09/16/2022</li>
+          <li>📜 Cyber Security, Nifty ICT Solutions, Gambia, 04/25/2022 – 04/29/2022</li>
+          <li>📜 SPSS Data Manipulation, Dept. of Water Resources, Gambia, 01/17/2022 – 01/21/2022</li>
+          <li>📜 Electronic Records Management, SMD, Banjul, 11/06/2021 – 11/10/2021</li>
+          <li>📜 Industrial Informatization, Guizhou Academy (Online), 09/06/2021 – 09/20/2021</li>
+          <li>📜 GIS Training, Dept. of Water Resources, Gambia, 03/02/2020 – 03/06/2020</li>
+          <li>🌍 Information Safety, Guizhou Academy, China, 08/16/2019 – 09/18/2019</li>
+          <li>🌍 Vessel Monitoring Technologies, ATLAFCO, Morocco, 06/10/2019 – 06/12/2019</li>
+          <li>🌍 MESA System Admin, Univ. of Ghana, Ghana, 11/26/2018 – 11/30/2018</li>
+          <li>📜 Network Structures & Security, MDI, Gambia, 09/11/2017 – 09/29/2017</li>
+          <li>🌍 MESA System Administrator and Thematic Training, Kenya Metrological Institute, Kenya, 11/14/2016 – 11/18/2016</li>
+        </ul>
+      </section>
+	   <section class="interests">
+        <h2>Interests</h2>
+        <ul class="interests-list">
+          <li>📚 Reading</li>
+          <li>⚽ Football</li>
+          <li>🌍 Social Service</li>
+        </ul>
+      </section>
+	   <section class="publications">
+        <h2>Community Service</h2>
+        <p>As an active member of the Village Development Committee (VDC), I help oversee development planning, infrastructure projects, and social service delivery in education, health, and sanitation. I promote sustainable environmental practices, foster communication between the community and government, and support transparency and local empowerment.</p>
+      </section>
+	   <section class="references">
+        <h2>References</h2>
+        <p><strong>Mr. Mbemba Hydara</strong><br>
+        Head of Department – School of ICT, University of the Gambia<br>
+        📞 +220 7630618 | ✉️ mhydara@utg.edu.gm</p>
+
+        <p><strong>Mr. Malang Darboe</strong><br>
+        Deputy Permanent Secretary – Ministry of Fisheries and Water Resources<br>
+        📞 +220 7771974 | ✉️ malang.darboe@gmail.com</p>
+      </section>
+  </main>
+
+  <!-- Include Font Awesome for social icons -->
+  <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+</body>
+</html>
